@@ -16,7 +16,7 @@
 <body class="landingpage">
     <!--<button id="myBtn">Open Modal</button>-->
     <img src="img/BB_orange_text.png" width="60%" />
-    <p>Welcom Guest</p>
+    <p id="result"></p>
     <hr>
     <div class="landingGround">
         <ul>
@@ -49,8 +49,8 @@
             <div class="closeBtn close"><img src="img/close.png" width="50%"></div>
             <h3>Create Profile</h3>
             <img src="img/default_profile.png" />
-            <input type="text" name="fname" placeholder="Name">
-            <input type="email" name="fname" placeholder="email">
+            <input type="text" name="fname" placeholder="Name" id="username">
+            <input type="email" name="fname" placeholder="email" id="email">
             <ul class="ageLimit">
                 <li><img src="img/7_12yrs.png" /><br>
                     <p>7-12yrs</p>
@@ -66,8 +66,8 @@
                 </li>
             </ul>
             <div>
-                <input type="button" value="RESET" class="btnreset" />
-                <input type="button" value="SUBMIT" class="btnsubmit" />
+                <input type="button" value="RESET" class="btnreset" id="btnGet"  onClick="resett() "/>
+                <input type="button" value="SUBMIT" class="btnsubmit" id="btnSave"  onClick="stored()"/>
             </div>
         </div>
     </div>
@@ -98,6 +98,6 @@
             }
         }
     </script>
-</body>
 
+</body>
 </html>
