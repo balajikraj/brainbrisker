@@ -101,15 +101,15 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #9da0a3 !important;
             border: 1px solid #aeadad !important;
-            width: 40% !important;
+            width: 30% !important;
             float: left;
-            margin: 5% 5% 10% 5%!important;
+            margin: 5% 5% 10% 8%!important;
         }
         
         .btnsubmit {
-            width: 40%!important;
+            width: 30% !important;
             float: left;
-            margin: 5% 5% 10% 5%!important;
+            margin: 5% 0% 10% 8%!important;
         }
         
         .closeBtn {
@@ -155,7 +155,7 @@
         .landingpage p {
             color: #9ea0a3;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 14px;
             line-height: 0px;
         }
         
@@ -266,4 +266,191 @@
             margin-top: 15%;
             left: 10%;
             position: relative;
+        }
+        
+        .middlePosition {
+            position: relative;
+            top: -20px;
+        }
+        
+        .pl25 {
+            padding-left: 25px;
+        }
+        
+        .runningTextbox {
+            margin: 15%;
+            color: #797a7a;
+            background: #fff;
+            padding: 5%;
+            border: 1px solid #b3b3b3;
+        }
+        
+        .runningTextbox p {
+            line-height: 20px;
+        }
+        
+        .gamePage {
+            background: #f9f9f9;
+            padding: 6%;
+        }
+        
+        .gamePage p {
+            line-height: 2;
+            font-size: 120%;
+        }
+        
+        .gameInfo {
+            background: #FFF;
+            border: 1px solid #b3b3b3;
+            padding: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #797a7a;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        
+        .gameInfo2 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #797a7a;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+        
+        .heading1 {
+            color: #db1c71;
+            font-size: 200%;
+            line-height: 3;
+        }
+        
+        .infoIcon img {
+            width: 40%;
+            float: left;
+        }
+        
+        .infoIcon a {
+            text-decoration: none;
+            color: #a7a9ac;
+            float: left;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .infoIcon span {
+            position: relative;
+            left: 10px;
+            top: 15px;
+        }
+        
+        .infoIcon,
+        {
+            float: left;
+        }
+        
+        .nextIcon {
+            float: right;
+        }
+        
+        .nextIcon a,
+        .gameInfo2 h2 {
+            text-decoration: none;
+            color: #db1c71;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .gameInfo2 p {
+            line-height: 1.1;
+            text-align: left;
+        }
+        
+        .gameInfoExample {
+            background: #FFF;
+            border: 1px solid #b3b3b3;
+            padding: 5%;
+        }
+        
+        .nextIcon img {
+            width: 50%;
+            float: right;
+        }
+        
+        .nextIcon span {
+            position: relative;
+            right: -15px;
+            top: 15px;
+        }
+        
+        .eocPlayGround {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border: 1px solid #b3b3b3;
+            background-color: #FFF;
+            padding: 5%;
+        }
+        
+        .eocPlayGround h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            color: #d1d3d4;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0!important;
+        }
+        
+        .eocText {
+            color: #00a651;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px!important;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0!important;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        
+        .progressBar {
+            color: #000!important;
+            background-color: #f1f1f1!important
+        }
+        
+        .progressBargreen {
+            height: 50px;
+            width: 25%;
+            color: #fff!important;
+            background-color: #46cdef!important;
+            margin: 5% 0 5% 0;
+        }
+        
+        .button1 {
+            padding: 3% 5%;
+            color: #FFF!important;
+            /*background-color: #ff0000!important;*/
+            font-size: 30px;
+            border: none;
+            width: 30%;
+            margin-right: 20px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        
+        .button2 {
+            padding: 3% 5%;
+            color: #FFF!important;
+            /*background-color: #00a651!important;*/
+            font-size: 30px;
+            border: none;
+            width: 30%;
+            margin-left: 20px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        #myProgress {
+            width: 100%;
+            background-color: #ddd;
+        }
+        
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: #4CAF50;
         }
