@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Arrange Numbers</title>
-        <center>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Arrange Numbers</title>
+    <center>
+        <div class="arrangenum">
             <form name="frm">
-            <ul>
-            <li><input type="radio" id="lev1" name="myradio" onclick="window.location.href='?level=1'"> Level 1</li>
-            <li><input type="radio" id="lev2" name="myradio" onclick="window.location.href='?level=2'"> Level 2</li>
-            <li><input type="radio" id="lev3" name="myradio" onclick="window.location.href='?level=3'"> Level 3</li>
-            </ul>
-            <br><br>
-            Moves: <input type="text" name="txt" size="8" READONLY>
-            Time: <input type="text" name="txt1" size="8" READONLY><br><br>
+                <ul>
+                    <li><input type="radio" id="lev1" name="myradio" onclick="window.location.href='?level=1'"> Level 1</li>
+                    <li><input type="radio" id="lev2" name="myradio" onclick="window.location.href='?level=2'"> Level 2</li>
+                    <li><input type="radio" id="lev3" name="myradio" onclick="window.location.href='?level=3'"> Level 3</li>
+                </ul>
+                <br><br> Moves: <input type="text" name="txt" size="8"> Time: <input type="text" name="txt1" size="8" READONLY><br><br>
             </form>
-            
-            <script type="text/javascript" src="js\arrangeNumbers.js">
-            </script>
-            <input type="button" value=start onclick="tim()">
-            </center>
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+        </div>
+        <script type="text/javascript" src="js\arrangeNumbers.js">
+        </script>
+        <input type="button" value="start" onclick="tim()">
+    </center>
+</head>
+
+<body class="ngamebody">
+
+</body>
+
 </html>
