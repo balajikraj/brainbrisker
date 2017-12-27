@@ -19,8 +19,8 @@
         var textName = ['Red', 'Blue', 'Yellow', 'Brown', 'Grey', 'Orange', 'Purple', 'Blue', 'Orange', 'Pink'];
         var score = 0;
 
-        var btnName1=['Green','Blue','Blue','Brown','Grey','Orange','Pink','Blue','Green','Lavender'];
-        var btnName2=['Red','Red','Yellow','Purple','Orange','Green','Purple','Yellow','Orange','Pink'];
+        var btnName1=['Red','Red','Yellow','Purple','Orange','Green','Purple','Yellow','Orange','Pink'];
+        var btnName2=['Green','Blue','Blue','Brown','Grey','Orange','Pink','Blue','Green','Lavander'];
         var total;
         function gameloop()
         {
@@ -62,11 +62,13 @@
              total=score*10;
              document.getElementById("score").innerHTML = total + "%";
             document.getElementById("outline").style.border = "5px solid #00a651";
+            //document.getElementById("btn1").disabled=true;
+
 
              }
             else        {
                 document.getElementById("outline").style.border = "5px solid #ff0000";
-
+    
             }
             //sbreakLoop();
         }
@@ -82,6 +84,7 @@
             total=score*10;
             document.getElementById("score").innerHTML = total + "%";
             document.getElementById("outline").style.border = "5px solid #00a651";
+            btn2.disabled=true;
         }
             else 
             {
@@ -126,7 +129,7 @@
             </div>
     
         <!--<progress value="10" max="100"></progress>!-->
-        <input type="button" value="Green" class="button1" onClick="button1()" id="btn1"/>
+        <input type="button" value="Green" class="button1" onClick="button1()" id="btn1">
         <input type="button" value="Red" class="button2" onClick="button2()" id="btn2" />
         <button onclick="move()">Click Me</button>
         <p id="score"></p>
