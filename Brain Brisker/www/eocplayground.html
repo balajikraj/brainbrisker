@@ -14,8 +14,8 @@
     <script type="text/javascript ">
         var gameCase = ['1/10', '2/10', '3/10', '4/10', '5/10', '6/10', '7/10', '8/10', '9/10', '10/10'];
         var textColor = ['#00a651', '#ff0000', '#46cdef', '#721e9e', '#ff7701', '#00a651', '#ff75a4', '#ffe000', '#b0cb00', '#ba7ab1'];
-        var btn1 = ['#ff0000', '#ff0000', '#46cdef', '#721e9e', '#ff7701', '#00a651', '#8a00b9', '#00a651', '#ff7701', '#ff75a4'];
-        var btn2 = ['#00a651', '#00aeef', '#ffe000', '#874d00', '#898989', '#ff7701', '#ff75a4', '#ffe000', '#b0cb00', '#ba7ab1'];
+        var btn1 = ['#ff0000', '#ff0000','#ffe000' , '#721e9e', '#ff7701', '#00a651', '#8a00b9','#ffe000' , '#ff7701', '#ff75a4'];
+        var btn2 = ['#00a651', '#00aeef', '#46cdef', '#874d00', '#898989', '#ff7701', '#ff75a4','#00a651',  '#b0cb00', '#ba7ab1'];
         var textName = ['Red', 'Blue', 'Yellow', 'Brown', 'Grey', 'Orange', 'Purple', 'Blue', 'Orange', 'Pink'];
         var score = 0;
 
@@ -72,6 +72,10 @@
             }
             //sbreakLoop();
         }
+        function disableButton(btn){
+				document.getElementById(btn.id).disabled = true;
+				alert("Button has been disabled.");
+			}
         function breakLoop()
          {
            break;  
