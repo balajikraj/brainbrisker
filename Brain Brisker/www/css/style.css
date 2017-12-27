@@ -440,26 +440,29 @@
         
         .button1 {
             padding: 3% 5%;
-            color: #FFF!important;
+            color: #000!important;
             /*background-color: #ff0000!important;*/
             font-size: 30px;
-            border: none;
+           border:2px solid;
             width: 30%;
             margin-right: 20px;
             margin-top: 10%;
             margin-bottom: 10%;
-        }
+            background: none;
+             }
         
         .button2 {
             padding: 3% 5%;
-            color: #FFF!important;
+            color: #000!important;
             /*background-color: #00a651!important;*/
             font-size: 30px;
-            border: none;
+           border: 2px solid;
             width: 30%;
             margin-left: 20px;
             margin-top: 10%;
             margin-bottom: 10%;
+            background:none;
+            
         }
         
         #myProgress {
