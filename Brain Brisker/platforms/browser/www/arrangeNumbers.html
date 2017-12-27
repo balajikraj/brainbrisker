@@ -11,8 +11,8 @@
 
 <body class="ngamebody">
     <a href="listOfGames.html"> <img src="img/back_button.png" width="10%" class="middlePosition" /></a>
-    <img src="img/eocLogo.png" width="20%" />
-    <img src="img/eyeoncolor.png" width="40%" class="pl25 middlePosition" />
+    <img src="img/atn_logo.png" width="20%" />
+    <img src="img/anlogo.png" width="40%" class="anlogoPosition middlePosition" />
     <hr>
     <div class="arrangenum">
         <form name="frm">
@@ -20,9 +20,9 @@
                 <div class="wrapper-demo">
                     <div id="dd" class="wrapper-dropdown-5" tabindex="1">Levels
                         <ul class="dropdown">
-                            <li><input type="radio" id="lev1" name="myradio" onclick="window.location.href='?level=1'"> Level 1</li>
-                            <li><input type="radio" id="lev2" name="myradio" onclick="window.location.href='?level=2'"> Level 2</li>
-                            <li><input type="radio" id="lev3" name="myradio" onclick="window.location.href='?level=3'"> Level 3</li>
+                            <li><input type="radio" id="lev1" name="myradio" onclick="window.location.href='?level=1'"><label for="lev1"> Level 1</label></li>
+                            <li><input type="radio" id="lev2" name="myradio" onclick="window.location.href='?level=2'"><label for="lev2"> Level 2</label></li>
+                            <li><input type="radio" id="lev3" name="myradio" onclick="window.location.href='?level=3'"><label for="lev3"> Level 3</label></li>
                         </ul>
                     </div>
                     ​</div>
@@ -30,7 +30,7 @@
             <input type="button" value="Start Game" onclick="tim()" class="startBtn">
             <div class="clear"></div>
             <center>
-                <p> Moves: <input type="text" name="txt" size="8" class="count"> Time: <input type="text" name="txt1" size="8" class="count"></p>
+                <p> Moves: <input type="text" name="txt" size="8" class="count" style="width:40px"> Time: <input type="text" name="txt1" size="8" class="count" style="width:40px">Seconds</p>
             </center>
         </form>
     </div>

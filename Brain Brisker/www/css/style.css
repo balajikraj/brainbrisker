@@ -279,6 +279,12 @@
             padding-left: 25px;
         }
         
+        .anlogoPosition {
+            padding-left: 10px!important;
+            top: -7px!important;
+            position: relative;
+        }
+        
         .runningTextbox {
             margin: 15%;
             color: #797a7a;
@@ -542,7 +548,7 @@
         }
         
         .wrapper-dropdown-5 .dropdown li {
-            padding: 0 10px;
+            padding: 10px;
         }
         
         .wrapper-dropdown-5 .dropdown li a {
