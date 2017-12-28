@@ -312,7 +312,7 @@ if (level == 1) {
         var ff = Math.round(Math.random() * 24);
         if (!jj.inArray(ff)) {
             jj[jj.length] = ff;
-            xx = xx - 1;
+             xx = xx - 1;
         }
     }
     for (var ffg = 0; ffg < jj.length; ffg++) {
@@ -321,14 +321,14 @@ if (level == 1) {
         p.src = "images1/" + g + ".svg";
     }
 
-    function swap(x, y) {
-        var temp = jj[x];
-        jj[x] = jj[y];
-        jj[y] = temp;
-        var p = eval("document.images.i" + x);
-        p.src = "images1/" + jj[x] + ".svg";
-        var p = eval("document.images.i" + y);
-        p.src = "images1/" + jj[y] + ".svg";
+    function swap(m, n) {
+        var temp = jj[m];
+        jj[m] = jj[n];
+        jj[n] = temp;
+        var p = eval("document.images.i" + m);
+        p.src = "images1/" + jj[m] + ".svg";
+        var p = eval("document.images.i" + n);
+        p.src = "images1/" + jj[n] + ".svg";
     }
     var firstmove = 1;
     var t = 0;
@@ -378,7 +378,7 @@ if (level == 1) {
                     val = firstmove++;
                     frm.txt.value = val;
                 }
-                swap(a + 4, a);
+                swap(a + 5, a);
             }
         }
         var checker = true;
