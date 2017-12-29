@@ -371,7 +371,7 @@ if (level == 1) {
                 swap(a - 5, a);
             }
         }
-        if (a < 18 && moved == false) {
+        if (a < 20 && moved == false) {
             if (jj[a + 5] == 0) {
                 moved = true;
                 if (moved == true) {
