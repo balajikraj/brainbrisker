@@ -20,7 +20,7 @@
     <hr>
     <form name=myform>
         <div align=center>
-            <table border=0 width=100% height=60% style=cursor:hand>
+            <div class="eightQueens">
                 <script>
                     //eight queens problem
 
@@ -56,7 +56,7 @@
 
                     {
 
-                        document.write('<tr>');
+                        document.write('<ul>');
 
                         for (var c = 0; c < 8; c++) //8 columns
 
@@ -64,13 +64,13 @@
 
                             id = (r * 8) + c; //calculate cell id
 
-                            document.write('<td id=' + id + ' onclick=\"placeq(this);\">');
+                            document.write('<li id=' + id + ' onclick=\"placeq(this);\">');
 
-                            document.write('<img src="empty.gif"></td>');
+                            document.write('<img src="empty.gif"></li>');
 
                         }
 
-                        document.write('</tr>');
+                        document.write('</ul>');
 
                     }
 
@@ -225,15 +225,15 @@
 
 
 
-            </table>
+                </table>
 
-            <input type=button value=" clear " onclick="clearBoard()">
+                <input type=button value=" clear " onclick="clearBoard()">
 
-            <input type=button value=" help " onclick="help()">
+                <input type=button value=" help " onclick="help()">
 
 
 
-        </div>
+            </div>
 
     </form>
 </body>
