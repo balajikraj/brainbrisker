@@ -78,6 +78,7 @@ if (level == 1) {
     }
 
     function moves(a) {
+       
         var moved = false;
         if (a % 3 != 0) {
             if (jj[a - 1] == 0) {
@@ -126,7 +127,7 @@ if (level == 1) {
             }
         }
         if (checker == true) {
-            alert("You won.........");
+            alert("You won........."+ti+"Seconds");
             clearTimeout(ti);
         }
     }
@@ -202,6 +203,7 @@ if (level == 1) {
         t = t + 1;
         ti = setTimeout("tim()", 1000);
     }
+    
 
     function moves1(a) {
         var moved = false;
@@ -252,8 +254,8 @@ if (level == 1) {
             }
         }
         if (checker == true) {
-            alert("YOU WON...............");
-            clearTimeout(ti);
+            alert("YOU WON..............."+n+"Seconds");
+            clearTimeout(n);
         }
     }
 } else if (level == 3) {
@@ -340,6 +342,7 @@ if (level == 1) {
     }
 
     function moves1(a) {
+       
         var moved = false;
         if (a % 5 != 0) {
             if (jj[a - 1] == 0) {
@@ -388,7 +391,7 @@ if (level == 1) {
             }
         }
         if (checker == true) {
-            alert("YOU WON...............");
+            alert("YOU WON..............."+ti+"Seconds");
             clearTimeout(ti);
         }
     }
