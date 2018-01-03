@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="format- detection" content="telephone=no" />
@@ -11,19 +12,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Brain Briker</title>
 
-     
+
 </head>
+
 <body class="gamePage">
     <form name=myform>
-           
+
         <div align="center">
-                
-              <table border="1" width=300 height=300 style=cursor:hand>
-                    <script>
+
+            <table>
+                <script>
                     //eight queens problem
 
                     //ron daenzer      
-                    var t=0;
+                    var t = 0;
                     var closed = new Array(64);
 
 
@@ -33,32 +35,32 @@
                     var imgEmpty = new Image(32, 32);
 
                     var imgDot = new Image(32, 32);
-                    
+
                     var id = 0;
 
                     var count = 0;
-                    imgQueen.src = "queen.gif";
+                    imgQueen.src = "img/crown_only.png";
 
-                    imgEmpty.src = "empty.gif";
+                    imgEmpty.src = "img/empty_box.png";
 
-                    imgDot.src = "dot.gif";
-                    
+                    imgDot.src = "img/heart_box.png";
+
 
                     for (var r = 0; r < 8; r++) //8 rows
 
                     {
-                        
+
                         document.write('<tr>');
 
                         for (var c = 0; c < 8; c++) //8 columns
 
                         {
-                           
+
                             id = (r * 8) + c; //calculate cell id
 
                             document.write('<td id=' + id + ' onclick=\"placeq(this);\">');
 
-                            document.write('<img src="empty.gif"></td>');
+                            document.write('<img src="img/empty_box.png"></td>');
 
                         }
 
@@ -66,14 +68,15 @@
 
                     }
 
-                    
 
-                    
-    function tim() {
-        myform.txt1.value = t;
-        t = t + 1;
-        t1 = setTimeout("tim()",1000);
-         }
+
+
+                    function tim() {
+                        myform.txt1.value = t;
+                        t = t + 1;
+                        t1 = setTimeout("tim()", 1000);
+                    }
+
                     function placeq(cell)
 
                     {
@@ -90,7 +93,7 @@
 
                         var max = Math.max(r, c);
 
-                       
+
 
                         if ((document.images[q].src == imgEmpty.src) && (safe(q)))
 
@@ -157,21 +160,21 @@
                         }
 
                         if (count == 8)
-                    //document.getElementById("placeq").innerHTML = "you have good job in"+n+"seconds";
-                        
-                            alert("Good job, you solved it!"+t1+"seconds");
-                        
-                        
-                        
+                        //document.getElementById("placeq").innerHTML = "you have good job in"+n+"seconds";
+
+                            alert("Good job, you solved it!" + t1 + "seconds");
+
+
+
                         if (count > 8)
 
                             alert("too many queens");
-                            
+
 
 
                     }
 
-                   
+
                     function safe(q)
 
                     { //safe position to place queen on board
@@ -199,25 +202,24 @@
                         closed = new Array(64);
 
                     }
-                   
-
                 </script>
-           
 
-</table>
 
+            </table>
+    </form>
+    <div class="eightQuennPos">
         <a href="listOfGames.html"> <img src="img/back_button.png" width="10%" class="middlePosition" /></a>
-        <img src="img/8queensLogo.png" width="25%" />
-        <img src="img/8queens.png" width="50%" class="anlogoPosition middlePosition" />
-        
-                <input type="button" value="Start" onclick="tim()" class="startBtn">
-                <input type="button" value=" clear " onclick="clearBoard()"class="startBtn">  
-            <div class="clear"></div>
-            <center>
-                <p>  Time: <input type="text" name="txt1" size="8" class="count" style="width:40px">Seconds<input type="text" name="txt2" size="8" class="count" style="width:40px"></p>
-            </center>
+        <img src="img/gamelist_queen.svg" width="20%" />
+        <img src="img/P8Q_text.svg" width="50%" class="eqlogoPosition middlePosition" />
 
-        </form>
+        <input type="button" value="Start" onclick="tim()" class="startBtn">
+        <input type="button" value=" clear " onclick="clearBoard()" class="startBtn">
+        <div class="clear"></div>
+        <center>
+            <p> Time: <input type="text" name="txt1" size="8" class="count" style="width:40px">Seconds<input type="text" name="txt2" size="8" class="count" style="width:40px"></p>
+        </center>
+
+    </div>
 </body>
 
 </html>

@@ -294,6 +294,12 @@
             position: relative;
         }
         
+        .eqlogoPosition {
+            padding-left: 10px!important;
+            top: -25px!important;
+            position: relative;
+        }
+        
         .runningTextbox {
             margin: 15%;
             color: #797a7a;
@@ -309,6 +315,11 @@
         .gamePage {
             background: #f9f9f9;
             padding: 6%;
+        }
+        
+        .gamePage table {
+            position: fixed;
+            top: 36%;
         }
         
         .gamePage p {
@@ -645,4 +656,9 @@
             width: 100%;
             height: 100%;
             position: absolute;
+        }
+        
+        .eightQuennPos {
+            position: fixed;
+            top: 2%;
         }
