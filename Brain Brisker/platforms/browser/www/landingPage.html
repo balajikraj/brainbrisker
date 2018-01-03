@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="js/landingPage.js"></script>
     <title>Brain Briker</title>
-    </head>
+</head>
 
 <body class="landingpage" onload="loading()">
     <!--<button id="myBtn">Open Modal</button>-->
@@ -54,22 +54,22 @@
             <input type="text" name="fname" placeholder="Name" id="username">
             <input type="email" name="fname" placeholder="email" id="email">
             <ul class="ageLimit">
-                <li><img src="img/7_12yrs.png" /><br>
+                <li><img src="img/7_12yrsb.png" id="ageimg1" onclick="changeImage1()" /><br>
                     <p>7-12yrs</p>
                 </li>
-                <li><img src="img/13_22yrs.png" /><br>
+                <li><img src="img/13_22yrsb.png" id="ageimg2" onclick="changeImage2()" /><br>
                     <p>13-22yrs</p>
                 </li>
-                <li><img src="img/23_30yrs.png" /><br>
+                <li><img src="img/23_30yrsb.png" id="ageimg3" onclick="changeImage3()" /><br>
                     <p>23-30yrs</p>
                 </li>
-                <li><img src="img/30+yrs.png" /><br>
+                <li><img src="img/30+yrsb.png" id="ageimg4" onclick="changeImage4()" /><br>
                     <p>30+ yrs</p>
                 </li>
             </ul>
             <div>
-                <input type="button" value="RESET" class="btnreset" id="btnGet"  onClick="resett() "/>
-                <input type="button" value="SUBMIT" class="btnsubmit" id="btnSave"  onClick="stored()"/>
+                <input type="button" value="RESET" class="btnreset" id="btnGet" onClick="resett() " />
+                <input type="button" value="SUBMIT" class="btnsubmit" id="btnSave" onClick="stored()" />
             </div>
         </div>
     </div>
@@ -97,6 +97,42 @@
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+            }
+        }
+
+        function changeImage1() {
+            if (document.getElementById("ageimg1").getElementsByTagName("img") == "img/7_12yrs.png") {
+                document.getElementById("ageimg1").src = "img/7_12yrsb.png";
+            } else {
+                document.getElementById("ageimg1").src = "img/7_12yrs.png";
+            }
+        }
+
+
+        function changeImage2() {
+
+            if (document.getElementById("ageimg2").getElementsByTagName("img") == "img/13_22yrs.png") {
+                document.getElementById("ageimg2").src = "img/13_22yrsb.png";
+            } else {
+                document.getElementById("ageimg2").src = "img/13_22yrs.png";
+            }
+        }
+
+        function changeImage3() {
+
+            if (document.getElementById("ageimg3").src == "img/23_30yrs.png") {
+                document.getElementById("ageimg3").src = "img/23_30yrsb.png";
+            } else {
+                document.getElementById("ageimg3").src = "img/23_30yrs.png";
+            }
+        }
+
+        function changeImage4() {
+
+            if (document.getElementById("ageimg4").src == "img/30+yrs.png") {
+                document.getElementById("ageimg4").src = "img/30+yrsb.png";
+            } else {
+                document.getElementById("ageimg4").src = "img/30+yrs.png";
             }
         }
     </script>

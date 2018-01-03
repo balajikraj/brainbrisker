@@ -75,6 +75,7 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
+        document.getElementById("numberpopup").style.visibility = "hidden";
     }
 
     function moves(a) {
@@ -312,7 +313,7 @@ if (level == 1) {
         var ff = Math.round(Math.random() * 24);
         if (!jj.inArray(ff)) {
             jj[jj.length] = ff;
-             xx = xx - 1;
+            xx = xx - 1;
         }
     }
     for (var ffg = 0; ffg < jj.length; ffg++) {
