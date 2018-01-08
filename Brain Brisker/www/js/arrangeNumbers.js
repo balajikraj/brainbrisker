@@ -76,11 +76,14 @@ if (level == 1) {
         t = t + 1;
         ti = setTimeout("tim()", 1000);
         document.getElementById("numberpopup").style.display = "none";
+<<<<<<< HEAD
         console.log(t);
+=======
+>>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
     }
 
     function moves(a) {
-       
+
         var moved = false;
         if (a % 3 != 0) {
             if (jj[a - 1] == 0) {
@@ -133,6 +136,7 @@ if (level == 1) {
             console.log(val);
         }
         if (checker == true) {
+<<<<<<< HEAD
            if(val>1 && val<20)
             {
             alert("Well play your score is 90%  for"+val+"moves and"+t+"Seconds");
@@ -140,6 +144,10 @@ if (level == 1) {
           else if(val>20 && val<50)
           {
               alert("good your score is 75% for"+val+"moves and"+t+"Seconds");
+=======
+            alert("You won........." + ti + "Seconds");
+            clearTimeout(ti);
+>>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
         }
 else{
     alert("try again");
@@ -221,7 +229,7 @@ else{
         document.getElementById("numberpopup").style.display = "none";
 
     }
-    
+
 
     function moves1(a) {
         var moved = false;
@@ -274,8 +282,13 @@ else{
             }
         }
         if (checker == true) {
+<<<<<<< HEAD
             alert("YOU WON..............."+t+"Seconds");
             clearTimeout(ti);
+=======
+            alert("YOU WON..............." + n + "Seconds");
+            clearTimeout(n);
+>>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
         }
     }
 } else if (level == 3) {
@@ -365,7 +378,7 @@ else{
 
 
     function moves1(a) {
-       
+
         var moved = false;
         if (a % 5 != 0) {
             if (jj[a - 1] == 0) {
@@ -414,7 +427,11 @@ else{
             }
         }
         if (checker == true) {
+<<<<<<< HEAD
             alert("YOU WON..............."+t+"Seconds");
+=======
+            alert("YOU WON..............." + ti + "Seconds");
+>>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
             clearTimeout(ti);
         }
     }
