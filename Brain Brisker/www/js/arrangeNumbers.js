@@ -75,7 +75,8 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
-        document.getElementById("numberpopup").style.visibility = "hidden";
+        document.getElementById("numberpopup").style.display = "none";
+        console.log(t);
     }
 
     function moves(a) {
@@ -88,6 +89,7 @@ if (level == 1) {
                     val = firstmove++;
                     frm.txt.value = val;
                 }
+                //console.log(val);
                 swap(a - 1, a);
             }
         }
@@ -97,6 +99,7 @@ if (level == 1) {
                 if (moved == true) {
                     val = firstmove++;
                     frm.txt.value = val;
+                    //console.log(val);
                 }
                 swap(a + 1, a);
             }
@@ -107,6 +110,7 @@ if (level == 1) {
                 if (moved == true) {
                     val = firstmove++;
                     frm.txt.value = val;
+                   // console.log(val);
                 }
                 swap(a - 3, a);
             }
@@ -126,11 +130,22 @@ if (level == 1) {
             if (jj[fg] == fg + 1) {} else {
                 checker = false;
             }
+            console.log(val);
         }
         if (checker == true) {
-            alert("You won........."+ti+"Seconds");
-            clearTimeout(ti);
+           if(val>1 && val<20)
+            {
+            alert("Well play your score is 90%  for"+val+"moves and"+t+"Seconds");
+            }
+          else if(val>20 && val<50)
+          {
+              alert("good your score is 75% for"+val+"moves and"+t+"Seconds");
         }
+else{
+    alert("try again");
+}
+   clearTimeout(ti);
+                   }
     }
 
 } else if (level == 2) {
@@ -203,6 +218,8 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
+        document.getElementById("numberpopup").style.display = "none";
+
     }
     
 
@@ -244,6 +261,7 @@ if (level == 1) {
                 if (moved == true) {
                     val = firstmove++;
                     frm.txt.value = val;
+                   
                 }
                 swap(a + 4, a);
             }
@@ -252,11 +270,12 @@ if (level == 1) {
         for (fg = 0; fg < 15; fg++) {
             if (jj[fg] == fg + 1) {} else {
                 checker = false;
+                console.log(val); 
             }
         }
         if (checker == true) {
-            alert("YOU WON..............."+n+"Seconds");
-            clearTimeout(n);
+            alert("YOU WON..............."+t+"Seconds");
+            clearTimeout(ti);
         }
     }
 } else if (level == 3) {
@@ -340,7 +359,10 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
+        document.getElementById("numberpopup").style.display = "none";
+
     }
+
 
     function moves1(a) {
        
@@ -392,7 +414,7 @@ if (level == 1) {
             }
         }
         if (checker == true) {
-            alert("YOU WON..............."+ti+"Seconds");
+            alert("YOU WON..............."+t+"Seconds");
             clearTimeout(ti);
         }
     }

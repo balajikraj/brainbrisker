@@ -10,9 +10,9 @@
                 localStorage.mail=document.getElementById("email").value;
                 val1=localStorage.getItem("mail");
                 console.log(val1);
-                /*localStorage.age1=document.getElementById("age").value;
+                localStorage.age1=document.getElementById("ageimg1").value;
                 val2 =localStorage.getItem("age1");
-                console.log(val2); */
+                console.log(val2); 
                 alert("your data will be stored");
                 modal.style.display = "none";
             }

@@ -75,6 +75,8 @@
                         myform.txt1.value = t;
                         t = t + 1;
                         t1 = setTimeout("tim()", 1000);
+                        document.getElementById("numberpopup").style.display = "none";
+ console.log(t);
                     }
 
                     function placeq(cell)
@@ -160,21 +162,27 @@
                         }
 
                         if (count == 8)
+                        {
                         //document.getElementById("placeq").innerHTML = "you have good job in"+n+"seconds";
+                        if(t>1 && t<35)
+                            {
+                            alert("Good job, you solved it!" + t + "seconds and your score is 75%");
 
-                            alert("Good job, you solved it!" + t1 + "seconds");
-
-
-
-                        if (count > 8)
-
-                            alert("too many queens");
-
-
-
+                            }
+                            else if(t>35 && t<75)
+                            {
+                                alert("Good job, you solved it!" + t + "seconds and your score is 50%"); 
+                            }
+                            else
+                            alert("try ur speed level");
+                        }
+                       // if(count >7)
+                    //{
+                        //alert("Well play please try again");
+                    //} 
+                    
                     }
-
-
+                    
                     function safe(q)
 
                     { //safe position to place queen on board
@@ -188,25 +196,33 @@
                             return true;
 
                     }
-
+                
                     function clearBoard()
 
                     { //clear the image array
-
+                        
+                        
                         for (var i = 0; i < 64; i++)
 
-                            window.document.images[i].src = imgEmpty.src;
+                        {
+            window.document.images[i].src = imgEmpty.src;
 
                         count = 0;
 
                         closed = new Array(64);
-
+                location.reload(true);
+                        
+                     
+                        }
                     }
+                
                 </script>
 
 
             </table>
     </form>
+   
+ 
     <div class="eightQuennPos">
         <a href="listOfGames.html"> <img src="img/back_button.png" width="10%" class="middlePosition" /></a>
         <img src="img/gamelist_queen.svg" width="20%" />
@@ -215,6 +231,8 @@
         <input type="button" value="Start" onclick="tim()" class="startBtn">
         <input type="button" value=" clear " onclick="clearBoard()" class="startBtn">
         <div class="clear"></div>
+        <div class="numberpopup" id="numberpopup"></div>
+ 
         <center>
             <p> Time: <input type="text" name="txt1" size="8" class="count" style="width:40px">Seconds<input type="text" name="txt2" size="8" class="count" style="width:40px"></p>
         </center>
