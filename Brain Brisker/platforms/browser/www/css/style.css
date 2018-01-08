@@ -1,4 +1,12 @@
         body {
+            background: #f9f9f9;
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        
+        .splashBody {
             background: #376062;
             /* For browsers that do not support gradients */
             background: -webkit-radial-gradient(50% 55%, closest-side, #b8c8c8, #376062, #03383b);
@@ -672,7 +680,11 @@
             width: 100%;
             height: 100%;
             position: absolute;
+<<<<<<< HEAD
             dispaly:block;
+=======
+            display: block;
+>>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
         }
         
         .eightQuennPos {
