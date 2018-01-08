@@ -24,6 +24,7 @@
         var btn2 = ['#00a651', '#00aeef', '#46cdef', '#874d00', '#898989', '#ff7701', '#ff75a4', '#00a651', '#b0cb00', '#ba7ab1'];
         var score = 0;
         var total;
+        var j = 0;
 
         function start() {
             for (var i = 0; i < gameCase.length; i++) {
@@ -31,7 +32,6 @@
                     setTimeout(function() {
                         document.getElementById("btn1").disabled = false;
                         document.getElementById("btn2").disabled = false;
-                        console.log(document.getElementById("btn2").disabled);
 
                         document.getElementById("outline").style.border = "1px solid #b3b3b3";
                         var elem = document.getElementById("myBar");
@@ -54,13 +54,24 @@
                         document.getElementById("btn1").style.background = btn1[i];
                         document.getElementById("btn2").style.background = btn2[i];
                         console.log(gameCase[i]);
+                        j = j + 1;
+
+                        console.log(j);
+                        if (j > 10) {
+                            console.log(score);
+                            alert(score);
+                        }
                     }, 3000 * i);
                 })(i);
                 modal.style.display = "none";
 
 
+
+
             }
+
         }
+
 
         function button1() {
 
@@ -72,7 +83,6 @@
                 score = score + 1;
                 total = score * 10;
                 document.getElementById("score").innerHTML;
-                console.log(document.getElementById("score").innerHTML = total);
 
 
 
@@ -95,7 +105,7 @@
                 score = score + 1;
                 total = score * 10;
                 document.getElementById("score").innerHTML;
-                console.log(document.getElementById("score").innerHTML = total);
+
 
 
             }
