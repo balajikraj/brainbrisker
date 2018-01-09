@@ -75,11 +75,8 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
-        document.getElementById("numberpopup").style.display = "none";
-<<<<<<< HEAD
         console.log(t);
-=======
->>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
+        document.getElementById("numberpopup").style.display = "none";
     }
 
     function moves(a) {
@@ -136,27 +133,31 @@ if (level == 1) {
             console.log(val);
         }
         if (checker == true) {
-<<<<<<< HEAD
-           if(val>1 && val<20)
+            if(val>1 && val<30)
             {
-            alert("Well play your score is 90%  for"+val+"moves and"+t+"Seconds");
+            alert("You won......at" + t + "Seconds"+"your score is 100%");
             }
-          else if(val>20 && val<50)
-          {
-              alert("good your score is 75% for"+val+"moves and"+t+"Seconds");
-=======
-            alert("You won........." + ti + "Seconds");
-            clearTimeout(ti);
->>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
+            else if(val>30 && val<60)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 75%");  
+            }
+            else if(val>60 && val<100)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 50%");  
+            }
+            else
+            {
+                alert("you take lot of time,you got 35% ");   
+            }
+            clearTimeout(t);
         }
-else{
-    alert("try again");
-}
-   clearTimeout(ti);
-                   }
+
+   
+     }
     }
 
-} else if (level == 2) {
+
+else if (level == 2) {
     document.getElementById("lev2").checked = true;
     document.write("<table border=0 cellpadding=1 class=ngame>");
     document.write("<tr>");
@@ -282,16 +283,28 @@ else{
             }
         }
         if (checker == true) {
-<<<<<<< HEAD
-            alert("YOU WON..............."+t+"Seconds");
-            clearTimeout(ti);
-=======
-            alert("YOU WON..............." + n + "Seconds");
-            clearTimeout(n);
->>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
+            if(val>1 && val<30)
+            {
+            alert("You won......at" + t + "Seconds"+"your score is 100%");
+            }
+            else if(val>30 && val<60)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 75%");  
+            }
+            else if(val>60 && val<100)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 50%");  
+            }
+            else
+            {
+                alert("you take lot of time,you got 35% ");   
+            }           
+             clearTimeout(t);
         }
     }
-} else if (level == 3) {
+} 
+
+else if (level == 3) {
     document.getElementById("lev3").checked = true;
     document.write("<table border=0 cellpadding=1 class=ngame>");
     document.write("<tr>");
@@ -427,12 +440,23 @@ else{
             }
         }
         if (checker == true) {
-<<<<<<< HEAD
-            alert("YOU WON..............."+t+"Seconds");
-=======
-            alert("YOU WON..............." + ti + "Seconds");
->>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
-            clearTimeout(ti);
+            if(val>1 && val<30)
+            {
+            alert("You won......at" + t + "Seconds"+"your score is 100%");
+            }
+            else if(val>30 && val<60)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 75%");  
+            }
+            else if(val>60 && val<100)
+            {
+                alert("You won......at" + t + "Seconds"+"your score is 50%");  
+            }
+            else
+            {
+                alert("you take lot of time,you got 35% ");   
+            }
+            clearTimeout(t);
         }
     }
 }

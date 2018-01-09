@@ -86,11 +86,6 @@ var gameCase = ['1/10', '2/10', '3/10', '4/10', '5/10', '6/10', '7/10', '8/10', 
                // console.log(document.getElementById("score").innerHTML = total);
                document.getElementById("score").innerHTML = total
                console.log(document.getElementById("score").innerHTML = total);
-               localStorage.score=document.getElementById("score").value;
-                 val=localStorage.getItem("score");
-                console.log(val);
-
-
             }
             //alert(document.getElementById("score").innerHTML=total);
             
