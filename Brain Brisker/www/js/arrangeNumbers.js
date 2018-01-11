@@ -136,20 +136,25 @@ if (level == 1) {
             if(val>1 && val<30)
             {
             alert("You won......at" + t + "Seconds"+"your score is 100%");
+           // document.getElementById("numberpopup").style.display = "none";
             }
             else if(val>30 && val<60)
             {
                 alert("You won......at" + t + "Seconds"+"your score is 75%");  
+             //   document.getElementById("numberpopup").style.display = "none";
             }
+
             else if(val>60 && val<100)
             {
                 alert("You won......at" + t + "Seconds"+"your score is 50%");  
+               // document.getElementById("numberpopup").style.display = "none";
             }
             else
             {
-                alert("you take lot of time,you got 35% ");   
+                alert("you take lot of time,you got 35% "); 
+                //document.getElementById("numberpopup").style.display = "none";  
             }
-            clearTimeout(t);
+           location.reload(true);
         }
 
    
@@ -299,7 +304,7 @@ else if (level == 2) {
             {
                 alert("you take lot of time,you got 35% ");   
             }           
-             clearTimeout(t);
+            location.reload(true);
         }
     }
 } 
@@ -456,7 +461,7 @@ else if (level == 3) {
             {
                 alert("you take lot of time,you got 35% ");   
             }
-            clearTimeout(t);
+            location.reload(true);
         }
     }
 }
