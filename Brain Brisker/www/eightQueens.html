@@ -76,7 +76,7 @@
                         t = t + 1;
                         t1 = setTimeout("tim()", 1000);
                         document.getElementById("numberpopup").style.display = "none";
- //console.log(t);
+
                     }
 
                     function placeq(cell)
@@ -167,54 +167,29 @@
 
                         }
                    
-                        for(var s=0; s<64;s++ )
-                        {
-                           if(window.document.images[s].src != imgEmpty.src)
-                           {
-                            var check=0;
-                            check=check+1;
-                           }
-console.log(check); 
-
-                            
-                        }
-                    }
-                        //console.log(count);
-                            
-                        /*if(count==8)
-                                {
-                                    alert("won");
-                                }
-                              if(count>=7) 
-                                {
-                                    alert("will try");
-                                    
-                                } */
                               
-                      /*if (count == 8)
+                      if (count == 8)
                         {
-                        //document.getElementById("placeq").innerHTML = "you have good job in"+n+"seconds";
                         if(t>1 && t<35)
                             {
                             alert("Good job, you solved it!" + t + "seconds and your score is 75%");
-
+                            location.reload(true);
                             }
                             else if(t>35 && t<75)
                             {
                                 alert("Good job, you solved it!" + t + "seconds and your score is 50%"); 
+                                location.reload(true);
                             }
                             else
                             {
                             alert("try ur speed level");
+                            location.reload(true);
                             }
                             
                         }
-                       else if(count<=8)
-                            {
-                                alert("try again");
-                            }*/
-                    //}
-                   
+                       
+                    }
+                    
                     
                     function safe(q)
 
