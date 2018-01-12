@@ -680,11 +680,7 @@
             width: 100%;
             height: 100%;
             position: absolute;
-<<<<<<< HEAD
-            dispaly:block;
-=======
             display: block;
->>>>>>> aca9ff3478944d6fdaf588e5132a13f412844a7a
         }
         
         .eightQuennPos {
