@@ -4,5 +4,17 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "displayName": "Brain Brisker"
+    "displayName": "Brain Brisker",
+    "dependencies": {
+        "admob": "^5.5.0",
+        "com.admob.plugin": "^5.5.0",
+        "cordova-admob": "git+https://github.com/appfeel/admob-google-cordova.git",
+        "cordova-android": "^7.0.0",
+        "cordova-connectivity-monitor": "^1.2.2",
+        "cordova-facebook-audnet-sdk": "^4.26.2",
+        "cordova-ios": "^4.5.4",
+        "cordova-plugin-admob-facebook": "^4.23.0",
+        "cordova-plugin-extension": "^1.5.4",
+        "cordova-plugin-facebookads": "^4.23.2"
+    }
 }

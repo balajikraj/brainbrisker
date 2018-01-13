@@ -13,8 +13,63 @@
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="js/landingPage.js"></script>
     <script type="text/javascript" src="js/eocplayground.js"></script>
-
     <title>Brain Briker</title>
+    <script type="text/javascript ">
+        /*  var isPendingInterstitial = false;
+                                        var isAutoshowInterstitial = false;
+
+
+                                        function prepareInterstitialAd() {
+                                            console.log("hit3");
+                                            if (!isPendingInterstitial) { // We won't ask for another interstitial ad if we already have an available one
+                                                admob.requestInterstitialAd({
+                                                    autoShowInterstitial: isAutoshowInterstitial
+                                                });
+                                            }
+                                        }
+
+                                        function onAdLoadedEvent(e) {
+                                            console.log("hit4");
+                                            if (e.adType === admob.AD_TYPE.INTERSTITIAL && !isAutoshowInterstitial) {
+                                                isPendingInterstitial = true;
+                                            }
+                                        }
+
+                                        function onDeviceReady() {
+                                            console.log("hit2");
+                                            document.removeEventListener('deviceready', onDeviceReady, false);
+
+                                            admob.setOptions({
+                                                publisherId: "ca-app-pub-5951995148528840~6661077084", // Required
+                                                interstitialAdId: "ca-app-pub-5951995148528840/4654038459" // Optional
+                                            });
+
+                                            document.addEventListener(admob.events.onAdLoaded, onAdLoadedEvent);
+                                            prepareIntestitialAd();
+                                        }
+
+                                        document.addEventListener("deviceready", onDeviceReady, false);
+
+                                        function showInterstitialAd() {
+                                            console.log("hit");
+                                            if (isPendingInterstitial) {
+                                                admob.showInterstitialAd(function() {
+                                                    isPendingInterstitial = false;
+                                                    isAutoshowInterstitial = false;
+                                                    prepareInterstitialAd();
+                                                });
+                                            } else {
+                                                // The interstitial is not prepared, so in this case, we want to show the interstitial as soon as possible
+                                                isAutoshowInterstitial = true;
+                                                admob.requestInterstitialAd({
+                                                    autoShowInterstitial: isAutoshowInterstitial
+                                                });
+                                            }
+                                        }
+                                        $(document).ready(function() {
+                                            showInterstitialAd()
+                                        });*/
+    </script>
 </head>
 
 <body class="landingpage" onload="loading()">
@@ -23,7 +78,7 @@
     <p id="result"></p>
     <hr>
     <div class="landingGround">
-        <ul>
+        <ul style="padding-top:10%">
             <li class="gap">
                 <a href="listOfGames.html"><img src="img/listofgame.png" />
                     <p>List of Games</p>
@@ -48,6 +103,7 @@
             </li>
         </ul>
     </div>
+    <div onload="">test</div>
     <div id="myModal" class="modal">
         <div class="profile">
             <div class="closeBtn close"><img src="img/close.png" width="50%"></div>

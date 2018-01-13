@@ -36,6 +36,26 @@ var app = {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
         app.setupPush();
+        document.addEventListener("deviceready", function() {
+            console.log("hit");
+            admobid = {
+                banner: 'ca-app-pub-5951995148528840~6661077084',
+                interstitial: 'ca-app-pub-5951995148528840/4654038459'
+            };
+
+            window.AdMob.createBanner({
+                adId: admobid.banner,
+                position: window.AdMob.AD_POSITION.BOTTOM_CENTER,
+                autoShow: true
+            });
+
+            window.AdMob.prepareInterstitial({
+                adId: admobid.interstitial,
+                autoShow: false
+            });
+            window.AdMob.showInterstitial();
+
+        }, false);
     },
     setupPush: function() {
         console.log('calling push init');
@@ -78,11 +98,11 @@ var app = {
         push.on('notification', function(data) {
             console.log('notification event');
             navigator.notification.alert(
-                data.message,         // message
-                null,                 // callback
-                data.title,           // title
-                'Ok'                  // buttonName
+                data.message, // message
+                null, // callback
+                data.title, // title
+                'Ok' // buttonName
             );
-       });
+        });
     }
 };
