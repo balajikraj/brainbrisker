@@ -14,7 +14,7 @@
         PhoneGap Team
     </author>
     <content src="index.html" />
-    <gap:plugin name="phonegap-admob" source="npm" />
+    <gap:plugin name="cordova-plugin-admobpro" source="npm" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -24,4 +24,5 @@
     <allow-intent href="geo:*" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>

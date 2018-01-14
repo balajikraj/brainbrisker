@@ -15,8 +15,8 @@
 
 </head>
 
-<body class="gamePage">
-    <form name=myform>
+<body class="gamePage" style="background-color:red">
+    <form name="myform">
 
         <div align="center">
 
@@ -117,13 +117,13 @@
                             for (var v = c; v < 64; v = v + 8)
 
                             {
-                                
+
                                 closed[v] = v;
                                 document.images[v].src = imgDot.src;
-                                
+
                             }
 
-                            
+
 
                             if (c > r) {
                                 var x1 = c - r;
@@ -136,7 +136,7 @@
                             for (var x = x1; x < x2; x = x + 9)
 
                             {
-                                
+
                                 closed[x] = x;
                                 document.images[x].src = imgDot.src;
                                 //console.log(document.images[x]);
@@ -155,42 +155,36 @@
                             for (var y = y1; y < y2; y = y + 7)
 
                             {
-                               
+
                                 closed[y] = y;
                                 document.images[y].src = imgDot.src;
                                 //console.log(document.images[y]);
                             }
 
-                            
+
 
                             document.images[q].src = imgQueen.src;
 
                         }
-                   
-                              
-                      if (count == 8)
-                        {
-                        if(t>1 && t<35)
-                            {
-                            alert("Good job, you solved it!" + t + "seconds and your score is 75%");
-                            location.reload(true);
-                            }
-                            else if(t>35 && t<75)
-                            {
-                                alert("Good job, you solved it!" + t + "seconds and your score is 50%"); 
+
+
+                        if (count == 8) {
+                            if (t > 1 && t < 35) {
+                                alert("Good job, you solved it!" + t + "seconds and your score is 75%");
+                                location.reload(true);
+                            } else if (t > 35 && t < 75) {
+                                alert("Good job, you solved it!" + t + "seconds and your score is 50%");
+                                location.reload(true);
+                            } else {
+                                alert("try ur speed level");
                                 location.reload(true);
                             }
-                            else
-                            {
-                            alert("try ur speed level");
-                            location.reload(true);
-                            }
-                            
+
                         }
-                       
+
                     }
-                    
-                    
+
+
                     function safe(q)
 
                     { //safe position to place queen on board
@@ -204,33 +198,33 @@
                             return true;
 
                     }
-                
+
                     function clearBoard()
 
                     { //clear the image array
-                        
-                        
+
+
                         for (var i = 0; i < 64; i++)
 
                         {
-            window.document.images[i].src = imgEmpty.src;
+                            window.document.images[i].src = imgEmpty.src;
 
-                        count = 0;
+                            count = 0;
 
-                        closed = new Array(64);
-                location.reload(true);
-                        
-                     
+                            closed = new Array(64);
+                            location.reload(true);
+
+
                         }
                     }
-                
                 </script>
 
 
             </table>
+        </div>
     </form>
-   
- 
+
+
     <div class="eightQuennPos">
         <a href="listOfGames.html"> <img src="img/back_button.png" width="10%" class="middlePosition" /></a>
         <img src="img/gamelist_queen.svg" width="20%" />
@@ -240,7 +234,7 @@
         <input type="button" value=" clear " onclick="clearBoard()" class="startBtn">
         <div class="clear"></div>
         <div class="numberpopup" id="numberpopup"></div>
- 
+
         <center>
             <p> Time: <input type="text" name="txt1" size="8" class="count" style="width:40px">Seconds<input type="text" name="txt2" size="8" class="count" style="width:40px"></p>
         </center>

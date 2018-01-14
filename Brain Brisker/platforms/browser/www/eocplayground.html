@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-        
+
 <head>
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" />
@@ -16,14 +16,14 @@
     <script type="text/javascript" src="js/eocplayground.js"></script>
 
     <title>Brain Brisker</title>
-    
+
 </head>
 
-   
-<body class="gamePage"> 
+
+<body class="gamePage">
     <!--<button id="myBtn">Open Modal</button>-->
     <a href="listOfGames.html"> <img src="img/back_button.png" width="10%" class="middlePosition" /></a>
-    <img src="img/eoclogo.png" width="20%" />
+    <img src="img/eocLogo.png" width="20%" />
     <img src="img/eyeoncolor.png" width="40%" class="pl25 middlePosition" />
     <hr>
 
@@ -42,9 +42,11 @@
         <!--<progress value="10" max="100"></progress>!-->
         <input type="button" value="Green" class="button1" onClick="button1()" id="btn1" />
         <input type="button" value="Red" class="button2" onClick="button2()" id="btn2" />
-             
-    </div> 
-    <p id="score"></p>  
+
+    </div>
+    <div class="score">Your Score is <br>
+        <span id="score"></span>
+    </div>
 </body>
 <div id="myModal" class="modal">
     <div class="popuppro">
@@ -53,7 +55,8 @@
             var modal = document.getElementById('myModal');
         </script>
     </div>
-    
+
 </div>
-<p id="score"></p>
+<h1 id="score"></h1>
+
 </html>
