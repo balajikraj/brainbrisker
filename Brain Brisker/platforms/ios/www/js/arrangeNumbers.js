@@ -75,7 +75,7 @@ if (level == 1) {
         frm.txt1.value = t;
         t = t + 1;
         ti = setTimeout("tim()", 1000);
-        console.log(t);
+        //console.log(t);
         document.getElementById("numberpopup").style.display = "none";
     }
 
@@ -284,7 +284,7 @@ else if (level == 2) {
         for (fg = 0; fg < 15; fg++) {
             if (jj[fg] == fg + 1) {} else {
                 checker = false;
-                console.log(val); 
+                //console.log(val); 
             }
         }
         if (checker == true) {
@@ -464,4 +464,4 @@ else if (level == 3) {
             location.reload(true);
         }
     }
-}
+}s

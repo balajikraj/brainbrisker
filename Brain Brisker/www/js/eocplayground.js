@@ -1,4 +1,4 @@
-var gameCase = ['1/10', '2/10', '3/10', '4/10', '5/10', '6/10', '7/10', '8/10', '9/10', '10/10', ];
+var gameCase = ['1/10', '2/10', '3/10', '4/10', '5/10', '6/10', '7/10', '8/10', '9/10', '10/10'];
 var textColor = ['#00a651', '#ff0000', '#46cdef', '#721e9e', '#ff7701', '#00a651', '#ff75a4', '#ffe000', '#b0cb00', '#ba7ab1'];
 var textName = ['Red', 'Blue', 'Yellow', 'Brown', 'Grey', 'Orange', 'Purple', 'Blue', 'Orange', 'Pink'];
 var btnName1 = ['Green', 'Blue', 'Blue', 'Brown', 'Grey', 'Orange', 'Pink', 'Blue', 'Green', 'Lavander'];
@@ -38,10 +38,10 @@ function start() {
                 document.getElementById("btn2").value = btnName2[i];
                 document.getElementById("btn1").style.background = btn1[i];
                 document.getElementById("btn2").style.background = btn2[i];
-                console.log(gameCase[i]);
+                //console.log(gameCase[i]);
 
                 count = count + 1;
-                console.log(count);
+                //console.log(count);
                 if (count == 10) {
                     document.getElementById("outline").style.display = "none";
                 }
@@ -65,7 +65,7 @@ function button1() {
         total = score * 10;
         //document.getElementById(score);
         //alert(total);
-        document.getElementById("score").innerHTML = total
+        document.getElementById("score").innerHTML = total;
 
 
 
@@ -92,7 +92,7 @@ function button2() {
         total = score * 10;
         //document.write(total);
         // console.log(document.getElementById("score").innerHTML = total);
-        document.getElementById("score").innerHTML = total
+        document.getElementById("score").innerHTML = total;
 
     }
     //alert(document.getElementById("score").innerHTML=total);
